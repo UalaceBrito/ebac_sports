@@ -1,5 +1,19 @@
 # Getting Started with Create React App
 
+## EBAC Sports com Redux
+
+O carrinho e os favoritos são gerenciados pelo Redux Toolkit. O catálogo é
+carregado com Redux Toolkit Query.
+
+Instale as dependências com `npm install` e inicie a aplicação com `npm start`.
+`npm test` executa os testes e `npm run build` gera a versão de produção.
+
+- `src/store.ts`: configura a store, reducers e middleware RTK Query.
+- `src/features/cart/cartSlice.ts`: ações e estado do carrinho e favoritos.
+- `src/services/produtosApi.ts`: requisição dos produtos com RTK Query.
+- Os componentes leem o estado com `useSelector` e enviam ações com
+  `useDispatch`.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
